@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Activity 1</title>
+    </head>
+    <body>
+        <h2>Classes in JS</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <script>
+            class student{
+                constructor(name,year,grade){
+                    this.name = name;
+                    this.year = year;
+                    this.grade = grade;
+                }
+                show(){
+                    var date=new Date();
+                    return "Age is " +(date.getFullYear()-this.year);
+                }
+            }
+            student1=new student("Dhendup", 2010, 8);
+            document.getElementById("p1").innerHTML=student1.show();
+            document.getElementById("p2").innerHTML=student1.name+ " Was born in " +student1.year;
+            document.getElementById("p3").innerHTML="Studies in grade " +student1.grade;
+
+        </script>
+    </body>
+</html>
